@@ -6,6 +6,7 @@ const homeconstant = require('./constants/homeconstant')
 app.set('views','./views')
 app.use("/public/images",express.static('./public/images'));
 app.use('/assets',express.static('assets'));
+
 app.get('/',(req,res)=>{
    res.render('home',{content:homeconstant})
 })
